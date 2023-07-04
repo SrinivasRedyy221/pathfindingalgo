@@ -1,0 +1,31 @@
+30 jun morning 7am
+npm create-react-app filename command is used first then
+html->index.js->app.js->pathvisualizer.jsx
+we are exporting a class this time extends components in react then we create a constructor with basic grid and mousemovement and set its state
+then we use another inbuilt method ComponentDidMount which is first rendered once after the state is rendered in react in which we call the grid function we use a 2 loops for 20 rows and 50 cols.
+
+.
+using the three functions |this is how we take the walls as the input and css the grids
+1)handlemousedown(isMousePressed:true) -we can the | newGridTogle that togles the thing taking grid,row,col as inputs where the specified newnode is created and all the elements in the node are isWall: !node.isWall
+2)handlemouseenter(is true return or set state to newGridtogle that is empty)
+3)handlemouseup(sets the to isMousePressed:false)
+
+
+
+this is used in the rendering the html using the grid.map and also row.map
+in javascript there is a inbuilt method of array that is map it functionality is It takes in (currentvalue and index)as a callback function for every element of the array then forms a new array.
+
+javascript array or list 
+-shift when arr=[1,2,3,4,5].shift =[1] 
+-unshift when arr=[2,3,4,5].unshift=[5]and arr=[1,2,3,4,5]
+
+dijkstra algo
+1)we take unVisitedNode=allnode()where it takes a nodes arr and stores all nodes using 2 for loops in row and node
+then we return visitedNodesinOrder if we get .distance is Infinite or finalnode we go through the for loop by taking the neighbournode by using getUnVisitedNeighbours function where 4 sides are taken and checked if unvisited 
+2)then we take nodesInShortesPathOrder(finishNode) then using the unshift operator the nodes are stored in the array 
+
+then finally we call the animateDijiksta algo where we give both visitedNodesinOrder and shortestpathorder
+-using a for loop for start to visitedNodesinOrder.length
+we take the settime fucntion call back and go thought every node and we use the js document model and catch the innerhtml getelementbyid give the string format mentioned in the node jsx and give some css
+then we check if the i = lastlength and give the animateshortestpath function(nodesInShortesPathOrder) where (same)we use the js document model and catch the innerhtml getelementbyid give the string format mentioned in the node jsx and give some css
+
